@@ -1,0 +1,13 @@
+{
+  "name": "scoreboard",
+  "version": "0.0.1",
+  "homepage": "http://fwdcp.net/",
+  "authors": [
+    "thesupremecommander <thesupremecmdr@gmail.com>"
+  ],
+  "description": "a scoreboard graphic, with both small and feature versions",
+  "resolutions": [
+    "720p"
+  ],
+  "license": "MIT"
+}

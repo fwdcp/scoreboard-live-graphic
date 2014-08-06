@@ -1,0 +1,341 @@
+#container {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#small-scoreboard {
+  height: 120px;
+  width: 320px;
+}
+
+#small-scoreboard-logo {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  height: 0px;
+  width: 0px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 7;
+  opacity: 0;
+  background: url("/view/scoreboard/img/logo.png") 50% 50% / contain no-repeat;
+}
+
+#small-scoreboard-info-container {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  height: 60px;
+  width: 240px;
+  overflow: hidden;
+}
+
+#small-scoreboard-info {
+  position: absolute;
+  background-color: #f4f4f5;
+  left: -100%;
+  height: 56px;
+  width: 236px;
+  border: 2px ridge #969696;
+  border-top-right-radius: 60px 60px;
+  border-bottom-right-radius: 60px 60px;
+  z-index: 3;
+}
+
+#small-scoreboard-away-team {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-right: 2px ridge #969696;
+  border-bottom: 1px ridge #969696;
+  background-color: #5885A2;
+  height: 28px;
+  width: 158px;
+  line-height: 28px;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 5;
+}
+
+#small-scoreboard-away-team-color {
+  position: absolute;
+  background-color: #5885A2;
+  height: 28px;
+  width: 50px;
+}
+
+#small-scoreboard-away-team-tag {
+  position: absolute;
+  left: 55px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#small-scoreboard-away-team-score {
+  position: absolute;
+  right: 5px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#small-scoreboard-home-team {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-right: 2px ridge #969696;
+  border-top: 1px ridge #969696;
+  background-color: #B8383B;
+  height: 28px;
+  width: 158px;
+  line-height: 28px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: middle;
+  z-index: 5;
+}
+
+#small-scoreboard-home-team-color {
+  position: absolute;
+  background-color: #B8383B;
+  height: 28px;
+  width: 50px;
+}
+
+#small-scoreboard-home-team-tag {
+  position: absolute;
+  left: 55px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#small-scoreboard-home-team-score {
+  position: absolute;
+  right: 5px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#small-scoreboard-timer {
+  position: absolute;
+  right: 0;
+  width: 76px;
+  height: 56px;
+  z-index: 4;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-family: 'Open Sans';
+}
+
+#small-scoreboard-timer-time {
+  position: absolute;
+  top: 0;
+  width: 65px;
+  color: #CF7336;
+}
+
+#small-scoreboard-timer-desc {
+  position: absolute;
+  bottom: 0;
+  width: 65px;
+  text-align: center;
+}
+
+#small-scoreboard-score-notification {
+  position: absolute;
+  background-color: #5885A2;
+  left: -100%;
+  height: 56px;
+  width: 236px;
+  border: 2px ridge #969696;
+  border-top-right-radius: 60px 60px;
+  border-bottom-right-radius: 60px 60px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 18px;
+  z-index: 6;
+}
+
+#small-scoreboard-score-notification-image {
+  position: absolute;
+  background: url("/view/scoreboard/img/BLU_sign.png") 50% 50% / contain no-repeat;
+  height: 50px;
+  width: 50px;
+  top: 3px;
+  left: 40px;
+}
+
+#small-scoreboard-score-notification-text {
+  position: absolute;
+  left: 95px;
+  top: 0px;
+  bottom: 0px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+#large-scoreboard {
+  position: absolute;
+  left: 160px;
+  right: 160px;
+  bottom: 60px;
+  height: 240px;
+  width: 960px;
+  background-color: #f4f4f5;
+  border-radius: 60px / 60px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#large-scoreboard-title {
+  position: absolute;
+  top: 0px;
+  height: 45px;
+  width: 960px;
+}
+
+#large-scoreboard-title-text {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: 'Open Sans';
+  line-height: 45px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#large-scoreboard-away-team {
+  position: absolute;
+  top: 45px;
+  height: 73px;
+  width: 960px;
+  background-color: #5885A2;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+}
+
+#large-scoreboard-away-team-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 65px;
+  height: 65px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: url("/view/scoreboard/img/BLU_sign.png") 50% 50% / contain no-repeat;
+}
+
+#large-scoreboard-away-team-name {
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  width: 735px;
+  height: 73px;
+  line-height: 73px;
+  font-size: 50px;
+  font-family: 'Open Sans';
+  color: white;
+}
+
+#large-scoreboard-away-team-score {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 119px;
+  height: 73px;
+  line-height: 73px;
+  font-size: 50px;
+  font-family: 'Open Sans';
+  background-color: #f4f4f5;
+  border-left: 1px solid #969696;
+  text-align: center;
+}
+
+#large-scoreboard-home-team {
+  position: absolute;
+  top: 120px;
+  height: 73px;
+  width: 960px;
+  background-color: #B8383B;
+  border-top: 1px solid #969696;
+  border-bottom: 1px solid #969696;
+}
+
+#large-scoreboard-home-team-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 65px;
+  height: 65px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: url("/view/scoreboard/img/RED_sign.png") 50% 50% / contain no-repeat;
+}
+
+#large-scoreboard-home-team-score {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 119px;
+  height: 73px;
+  line-height: 73px;
+  font-size: 50px;
+  font-family: 'Open Sans';
+  background-color: #f4f4f5;
+  border-left: 1px solid #969696;
+  text-align: center;
+}
+
+#large-scoreboard-home-team-name {
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  width: 735px;
+  height: 73px;
+  line-height: 73px;
+  font-size: 50px;
+  font-family: 'Open Sans';
+  color: white;
+}
+
+#large-scoreboard-status {
+  position: absolute;
+  top: 195px;
+  height: 45px;
+  width: 960px;
+}
+
+#large-scoreboard-status-text {
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: 'Open Sans';
+  line-height: 45px;
+  font-size: 25px;
+  text-align: right;
+}
