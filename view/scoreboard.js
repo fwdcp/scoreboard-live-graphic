@@ -127,10 +127,17 @@ function updateTime() {
   var time = moment.duration(timer.initialValue, 'seconds');
 
   if (timer.direction == -1) {
-    $('#small-scoreboard-timer-time').text(time.subtract(moment().diff(timer.startingTime, 'seconds'), 'seconds').format('m:ss', {trim: false}));
+    time.subtract(moment().diff(timer.startingTime, 'seconds'), 'seconds');
   }
   else if (timer.direction == 1) {
-    $('#small-scoreboard-timer-time').text(time.add(moment().diff(timer.startingTime, 'seconds'), 'seconds').format('m:ss', {trim: false}));
+    time.add(moment().diff(timer.startingTime, 'seconds'), 'seconds');
+  }
+  
+  if (time.asSeconds() >= 0) {
+    $('#small-scoreboard-timer-time').text(time.format('m:ss', {trim: false}));
+  }
+  else {
+    $('#small-scoreboard-timer-time').text('0:00');
   }
 }
 
