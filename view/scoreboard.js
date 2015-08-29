@@ -1,4 +1,4 @@
-$(document).on('ncgReady', function () {
+$(function () {
     nodecg.listenFor('scoreboardShowSmallScoreboard', showSmallScoreboard);
     nodecg.listenFor('scoreboardHideSmallScoreboard', hideSmallScoreboard);
     nodecg.listenFor('scoreboardShowTimer', showTimer);
@@ -11,6 +11,7 @@ $(document).on('ncgReady', function () {
     nodecg.listenFor('scoreboardDisplayNotification', displayNotification);
 
     var scoresVisible = false;
+	});
 
     function showSmallScoreboard() {
       var show = new TimelineLite({paused: true});
@@ -171,4 +172,4 @@ $(document).on('ncgReady', function () {
             .play();
       }
     }
-});
+
