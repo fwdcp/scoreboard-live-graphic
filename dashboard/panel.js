@@ -1,3 +1,5 @@
+'use strict';
+
 $('#scoreboard-home-image').change(function() {
   $('#scoreboard-home-image-preview').attr('src', $(this).val());
 });
