@@ -1,10 +1,10 @@
 scoreboard-live-graphic
 =======================
 
-a scoreboard graphic, with both small and feature versions
+A simple and easily editable scoreboard graphic . Watch the demo and make one for yourself now !!
 
 ### Demo
-https://www.youtube.com/watch?v=Iw7pzctAsxs
+https://www.youtube.com/watch?v=Iw7pzctAsxs . Do Like and Subscribe to the YouTube Channel
 
 ### Usage
 install to nodecg/packages/
